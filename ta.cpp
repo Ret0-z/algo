@@ -6,7 +6,7 @@ extern void shell(std::vector<int> & d);
 
 int main()
 {
-    std::ifstream ifs("test_data",std::fstream::in);
+    std::ifstream ifs("test_data.txt",std::fstream::in);
     if(ifs.is_open())
     {
         int num=0;
