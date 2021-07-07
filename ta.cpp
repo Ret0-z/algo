@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 
-extern void shell(std::vector<int> & d);
+#include "merge_sort.h"
 
 int main()
 {
@@ -17,7 +17,10 @@ int main()
             std::cout << num << " "; 
         }
         std::cout << "\n";
-        shell(data);
+        //shell(data);
+        Merge_Sort ms;
+        ms(data);
+
         for(auto& d: data)
         {
             std::cout << d << " "; 
