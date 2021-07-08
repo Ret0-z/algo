@@ -39,3 +39,18 @@ void Merge_Sort::sort(std::vector<int> & d)
     aux = std::vector<int>(d.size());
     sort(d, 0, d.size()-1);
 }
+
+void Merge_Sort::sort_bu(std::vector<int>& d)
+{
+    aux = std::vector<int>(d.size());
+    int len = d.size();
+
+    for(int sz=1; sz<len; sz*=2 )
+    {
+        for(int lo=0; lo<len-sz; lo+=2*sz)
+        {
+            int hi = std::min(lo+2*sz-1,len-1);
+            merge(d,lo,lo+sz-1,hi);
+        }
+    }
+}

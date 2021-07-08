@@ -9,6 +9,7 @@ public:
     {
         sort(d);
     }
+    void sort_bu(std::vector<int>& d);
 private:
     
     void sort(std::vector<int> & d);

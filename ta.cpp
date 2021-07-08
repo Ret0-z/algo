@@ -19,7 +19,7 @@ int main()
         std::cout << "\n";
         //shell(data);
         Merge_Sort ms;
-        ms(data);
+        ms.sort_bu(data);
 
         for(auto& d: data)
         {
