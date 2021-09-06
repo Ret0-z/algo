@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "merge_sort.h"
+#include "fast_sort.h"
 
 int main()
 {
@@ -18,8 +19,10 @@ int main()
         }
         std::cout << "\n";
         //shell(data);
-        Merge_Sort ms;
-        ms.sort_bu(data);
+        //Merge_Sort ms;
+        //ms.sort_bu(data);
+        Fast_Sort fs;
+        data = fs(data);
 
         for(auto& d: data)
         {
